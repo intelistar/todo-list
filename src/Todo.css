@@ -1,0 +1,91 @@
+.todo {
+  min-height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+.todo:hover .delete {
+  display: block;
+  opacity: 1;
+}
+
+.delete {
+  display: none;
+  width: 120px;
+  min-height: 100%;
+
+  opacity: 0;
+  border: none;
+  border-left: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(222, 44, 44);
+  color: #fff;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.task {
+  max-width: 550px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.task span {
+  word-wrap: break-word;
+  font-size: 1 rem;
+  width: 85%;
+}
+input[type="checkbox"] {
+  transform: scale(1.3);
+  opacity: 0.9;
+  box-shadow: none;
+}
+
+.completed {
+  background-color: rgb(70, 148, 250);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.completed span {
+  text-decoration: line-through;
+}
+
+.todo:hover .date {
+  display: none;
+}
+.date {
+  display: block;
+  color: grey;
+}
+
+@media (max-width: 600px) {
+  .todo {
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  .task {
+    gap: 5px;
+    max-width: 70%;
+    font-size: 0.8rem;
+  }
+  .delete {
+    width: 90px;
+    font-size: 0.8rem;
+    visibility: visible;
+    opacity: 100;
+    border: none;
+  }
+  .date {
+    font-size: 0.8rem;
+  }
+}

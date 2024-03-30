@@ -1,0 +1,58 @@
+#sort {
+  display: flex;
+  max-width: 650px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sort-bl {
+  height: 35px;
+  width: 210px;
+  border: 2px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: #393939;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.sort-bl:hover {
+  background-color: #f2f2f2;
+}
+#selected {
+  background-color: rgb(119, 178, 255);
+  border: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+#filter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+#filter span:first-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#filter div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 450px) {
+  #filter span:first-child {
+    font-size: 1rem;
+  }
+  #filter {
+    font-size: 0.9rem;
+  }
+  #sort {
+    gap: 5px;
+  }
+  .sort-bl {
+    font-size: 0.8rem;
+  }
+}
