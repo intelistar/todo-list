@@ -8,14 +8,14 @@ Filterable Todo List according to the following conditions:
   The ability to delete the task appears when instructed
   mice on the task;
 5. The list has the filter "only unfulfilled":
-  1. represented by a checkbox;
-  2. Included - the list displays only unfulfilled tasks;
-  3. Turned off - the list displays all tasks;
-  4. Turned off by default.
+  - represented by a checkbox;
+  - Included - the list displays only unfulfilled tasks;
+  - Turned off - the list displays all tasks;
+  - Turned off by default.
 6. The list has sorting:
-  1. "First new" - in the order of increasing date of creation;
-  2. "first old" - in the order of decreasing the date of creation;
-  3. "In alphabetical order."
+  - "First new" - in the order of increasing date of creation;
+  - "first old" - in the order of decreasing the date of creation;
+  - "In alphabetical order."
 7. Only one sorting can be active at the same time;
 8. Sorting "first new" is active by default;
 9. Active sorting is visually highlighted.
